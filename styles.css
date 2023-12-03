@@ -1,0 +1,27 @@
+
+            .btn-btn {
+                border: none;
+                color: white;
+                padding: 9px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 7px 2px;
+                cursor: pointer;
+            }
+            .primary{background-color:blue; display: inline-block;
+            border-radius: 8px;}
+            .secondary{background-color:blue; display: inline-block;
+            border-radius: 8px;}
+            .mb-5,h3{text-align:left;
+              margin:8px 8px;
+             }
+            .mb-3{text-align:right;}
+
+            label{
+                padding: 9px 9px;
+            width:100px;
+            display: inline-block;
+            }
+    
