@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['cid']))
+    {
+        header('index.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -115,7 +122,7 @@
 
          // password ro the database
             if(isset($_POST['Password']) && !empty($_POST['Password']))
-                $Password = $_POST['Password'];
+                $Password = md5($_POST['Password']);
             else
                 $error_msg .= "Error: Password should not be empty.<br>"; 
 

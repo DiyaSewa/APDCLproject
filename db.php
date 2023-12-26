@@ -1,14 +1,20 @@
 <?php
-$host="localhost";
-$db="project";
-$user="root";
-$pass="";
+error_reporting(E_ALL);
+ini_set('display_errors', 0);
 
-$conn = new mysqli($host,$user,$pass,$db);
+    $host="localhost";
+    $db="project";
+    $user="root";
+    $pass="";
 
-if($conn->connect_errno)
-{
-    die("Connection error".$conn->connect_error);
-}
+    $conn = new mysqli($host,$user,$pass,$db);
+
+    if($conn->connect_errno)
+    {
+        die("Connection error".$conn->connect_error);
+    }
+//    else{
+//     echo"connection successfull";
+//    }
 
 ?>
